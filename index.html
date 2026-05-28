@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Juan Medrano</title>
+    <link rel="icon" href="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" type="image/svg+xml">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* Fondo de la página entero (Gris oscuro) */
+            background-color: #1a1a1a; 
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px;
+            /* Color de fondo del encabezado (Negro) */
+            background-color: #000000; 
+            /* Color del texto del título (Cian) */
+            color: #ff00f7; 
+            text-align: center;
+        }
+
+        /* Efecto de resplandor (glow) en el título adaptado al nuevo color */
+        header h1 {
+            text-shadow: 0 0 10px rgba(0, 13, 255, 0.8), 0 0 20px rgba(47, 0, 255, 0.6);
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            /* Color del subtítulo (Cian) */
+            color: #00ffcc; 
+        }
+
+        main h4 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* --- ESTILOS DE LAS VENTANAS (TARJETAS) --- */
+        .tarjeta {
+            /* Fondo oscuro para las tarjetas */
+            background-color: #2b2b2b; 
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            /* Sombra y borde cian lateral */
+            box-shadow: -8px 0px 15px rgba(0, 255, 204, 0.2), 0 4px 8px rgba(0,0,0,0.5);
+            border-left: 5px solid #4c00ff; 
+            /* Color del texto general dentro de la tarjeta (Blanco) */
+            color: #ffffff; 
+        }
+
+        .tarjeta h3 {
+            /* Color del título de cada semana (Naranja para contrastar) */
+            color: #8000ff; 
+            margin-top: 0;
+        }
+
+        .tarjeta p {
+            /* Color del texto de los párrafos (Gris claro) */
+            color: #cccccc; 
+            font-size: 14px;
+        }
+
+        .contenido-multimedia {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 15px;
+            background-color: #111111; /* Fondo negro detrás del video */
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 3px solid #ff00cc;
+            background-color: #000000;
+            color: #2200ff;
+        }
+
+        /* --- ANIMACIÓN DEL LOGO --- */
+        footer img {
+            height: 40px; 
+            transition: transform 0.3s ease; 
+        }
+
+        footer img:hover {
+            transform: scale(1.3); 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera unidad</h1>
+    </header>
+    
+    <main>
+        <h4>Contenido de la pagina WEB</h4>
+
+        <div class="tarjeta">
+            <h3>Semana 1: Introducción a Arduino</h3>
+            <p>Consulta el detalle completo de la sesión en el visor interactivo a continuación:</p>
+            <div class="contenido-multimedia">
+                <img src="https://via.placeholder.com/1000x400/333/fff?text=Espacio+para+tu+PDF+o+Presentacion" alt="PDF" style="width: 100%; display: block;">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Semana 2: Introduccion a la Robotica</h3>
+            <p>En esta sesión exploramos los fundamentos de la robótica y el funcionamiento de los componentes básicos. A continuación, se presenta un video demostrativo de la práctica:</p>
+            <div class="contenido-multimedia">
+                <video width="100%" controls>
+                    <source src="Robotica 2 msgd.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <span>@mole.m7</span>
+        <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" alt="Logo Colegio">
+    </footer>
+</body>
+</html>
