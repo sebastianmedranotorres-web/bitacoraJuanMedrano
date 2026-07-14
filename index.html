@@ -81,7 +81,15 @@
             border-radius: 8px;
             overflow: hidden;
             margin-top: 15px;
-            background-color: #111111; /* Fondo negro detrás del video */
+            background-color: #111111; /* Fondo negro detrás del visor */
+        }
+
+        /* Ajuste específico para que el visor de PDF se vea bien en móviles y escritorio */
+        .visor-pdf {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
         }
 
         footer {
@@ -118,7 +126,8 @@
             <h3>Semana 1: Introducción a Arduino</h3>
             <p>Consulta el detalle completo de la sesión en el visor interactivo a continuación:</p>
             <div class="contenido-multimedia">
-                <img src="rrecursos/arduino.pdf" alt="PDF" style="width: 100%; display: block;">
+                <!-- Cambiado de <img> a <iframe> para renderizar el PDF interactivamente y corregida la ruta a "recursos/" -->
+                <iframe src="recursos/arduino.pdf" class="visor-pdf"></iframe>
             </div>
         </div>
 
